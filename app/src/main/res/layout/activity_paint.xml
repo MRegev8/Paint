@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/frm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#4CAF50"
+        android:onClick="changeColor"
+        android:padding="10dp"
+        android:tag="#4CAF50"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/colorpicker"
+        android:layout_width="241dp"
+        android:layout_height="251dp"
+        android:layout_centerHorizontal="true"
+        android:cropToPadding="false"
+        android:onClick="changeColor"
+        android:src="@drawable/colorpalatte"></ImageView>
+
+    <Button
+        android:id="@+id/btnBlue"
+        android:tag="#3F51B5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="110dp"
+        android:layout_alignParentTop="true"
+        android:onClick="changeColor"
+        android:padding="10dp"
+        android:backgroundTint="#3F51B5"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/btnRed"
+        android:tag="#F44336"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:onClick="changeColor"
+        android:backgroundTint="#F44336"
+        android:layout_marginRight="310dp"
+        android:padding="10dp"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/btnYellow"
+        android:tag="#FFEB3B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:onClick="changeColor"
+        android:layout_marginRight="210dp"
+        android:padding="10dp"
+        android:backgroundTint="#FFEB3B"
+        android:textSize="20dp"/>
+
+
+
+    <Button
+        android:id="@+id/btnLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:onClick="addLine"
+        android:text="Line"
+        android:tag="Line"
+        android:layout_alignTop="@id/btnRect"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btnRect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="95dp"
+        android:onClick="addRect"
+        android:tag="Rect"
+        android:text="Rect"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btnCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addCircle"
+        android:layout_alignTop="@id/btnRect"
+        android:layout_marginRight="185dp"
+        android:text="Circle"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/btnPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addPath"
+        android:layout_alignTop="@id/btnRect"
+        android:layout_marginRight="280dp"
+        android:text="Path"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/btnPoint"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="clear"
+        android:background="@drawable/clear"
+        android:layout_marginRight="360dp"
+        android:textSize="16sp"/>
+</RelativeLayout>
+

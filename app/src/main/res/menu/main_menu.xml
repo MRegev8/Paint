@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/style"
+        android:title="FILL/STROKE"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:title="COLOR"
+        android:id="@+id/color"
+        android:orderInCategory="200"
+        app:showAsAction="never"
+        />
+    <item android:title="THICC/THIN"
+        android:id="@+id/thicc"
+        android:orderInCategory="300"
+        app:showAsAction="never"
+        />
+    <item android:title="REMOVE THE WEAK"
+        android:id="@+id/BIG"
+        android:orderInCategory="400"
+        app:showAsAction="never"
+        />
+</menu>
